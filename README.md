@@ -7,11 +7,11 @@
 ### Outcome
 Based on the analysis of rental prices in different neighborhoods, the following were derived:
 
-**Neighborhood plays a significant role**: The location of the listing is a key factor influencing rental prices in Los Angeles. Different neighborhoods have distinct price dynamics, with some commanding higher prices than others. The more popular a neighborhood the likelier price will come down rather than neighborhoods in less competitive areas. Hosts should consider the desirability and amenities of a neighborhood when determining their rental pricing strategy.
+- **Neighborhood plays a significant role**: The location of the listing is a key factor influencing rental prices in Los Angeles. Different neighborhoods have distinct price dynamics, with some commanding higher prices than others. The more popular a neighborhood the likelier price will come down rather than neighborhoods in less competitive areas. Hosts should consider the desirability and amenities of a neighborhood when determining their rental pricing strategy.
 
-**Property attributes matter**: The number of bedrooms, bathrooms, and beds in a listing has a significant impact on rental prices. Listings with more bedrooms and bathrooms tend to command higher prices, indicating the importance of space and accommodation capacity for potential guests. Based on a Multiple Linear Regression model, a host might expect an increment of around $46 an additional bedroom or an entire home/apt.
+- **Property attributes matter**: The number of bedrooms, bathrooms, and beds in a listing has a significant impact on rental prices. Listings with more bedrooms and bathrooms tend to command higher prices, indicating the importance of space and accommodation capacity for potential guests. Based on a Multiple Linear Regression model, a host might expect an increment of around $46 an additional bedroom or an entire home/apt.
 
-**Amenities can drive prices**: The presence of basic or essential amenities in a listing, such as a dishwasher, tv, or washer, can positively influence rental prices. Hosts should highlight these amenities in their listings to attract guests and potentially justify higher prices. As an example, using the same modeling, hosts are able to increase their prices by around $21 just by offering a dishwasher.
+- **Amenities can drive prices**: The presence of basic or essential amenities in a listing, such as a dishwasher, tv, or washer, can positively influence rental prices. Hosts should highlight these amenities in their listings to attract guests and potentially justify higher prices. As an example, using the same modeling, hosts are able to increase their prices by around $21 just by offering a dishwasher.
 
 ![](https://i.postimg.cc/qvg95Qxy/Summary-Trends1.png)
 ![](https://i.postimg.cc/RZ8j5fg8/Summary-Trends2.png)
