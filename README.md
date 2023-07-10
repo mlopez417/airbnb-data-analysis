@@ -1,7 +1,7 @@
 <h1 align="center">Exploring the Los Angeles Airbnb Market:</h1>
 <h2 align="center">Unveiling Insights for Prospective Hosts</h2>
 
-### Purpose
+### Goal
 - Primary goal was to understand the factors that significantly influenced rental prices in different neighborhoods with the use of Python / Pandas and data visualization. 
 
 ### Outcome
