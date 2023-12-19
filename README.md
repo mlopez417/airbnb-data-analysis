@@ -34,12 +34,12 @@ Based on the analysis of rental prices in different neighborhoods, the following
 - To refine the number of variables and understand which have the strongest influence in price various functions and visualizations were used including:  
     - *correlation heatmaps, boxplots, bar graphs, regression plots, scatterplots, line graphs, and VIF values to check for high multicollinearity between variables.*
     
-- From this analysis the following variables were considered among the strongest influencers agaisnt price, though are  considered weak compared to the first few in this list: 
+- From this analysis the following variables were considered among the strongest influencers agaisnt price, listed from strongest to weakest: 
     - *'bedrooms', 'beds', 'Entire Home/Apt', 'bathrooms','avg_price_per_neighborhood', 'amenity_count', 'dishwasher_flag','tv_flag', 'oven_flag', 'washer_flag'* 
 
-- Correlation heatmaps helped focus key variables, but by including additional features derived from the dataset (i.e. avg_price_per_neighborhood, amenity_count, essential amenities, listings by room type), key representation of the data was not lost. As an example, within the dataset there were over 7,000 unique amenity offers. To consider some representation of that data without one hot encoding due to the risk of high dimensionality, the total number of amenities per listings was used instead. 
+- Correlation heatmaps helped focus key variables, but by including additional features derived from the dataset (i.e. avg_price_per_neighborhood, amenity_count, essential amenities, listings by room type), key representation of the data was not lost. As an example, within the dataset there were over 7,000 unique amenities offered. To consider some representation of that data without one hot encoding over 7K options, due to the risk of high dimensionality, a running total was considered per listing instead. 
 
-- Bar graphs helped affirm the relationship between price and varied neighborhoods. The more popular a neighborhood by number of listings (i.e. Sherman Oaks, Long Beach etc.) the more competitive the area and the lower the price will trend. That also words vice versa, neighborhoods like Malibu that only had 114 listings in the data set holds the second highest average price at \\$312 vs. a neighborhood like Sherman Oaks with over 2K listings and an average of \\$111.06.
+- Bar graphs helped affirm the relationship between price and varied neighborhoods. The more popular a neighborhood by number of listings (i.e. Sherman Oaks, Long Beach etc.) the more competitive the area and the lower the price will trend. That also works vice versa, neighborhoods like Malibu that only had 114 listings in the data set hold the second highest average price at $312 vs. a neighborhood like Sherman Oaks with over 2K listings and an average of $111.06.
 
 - Using scatterplots, regression plots (regplot) and VIF values also solidified not just the relationship between price and their respective independent variable but whether these variables had any high multicollinearity among other variables. The risk of high multicollinearity would have lowered modeling performance if not evaluated during EDA. 
 
@@ -67,7 +67,7 @@ Based on the analysis of rental prices in different neighborhoods, the following
 ---
 
 ### Modeling and Evaluation
-- Given that the question being addressed is what key factors influence price, the outcome variable was straightforward. It is a continous dependent variable with all independent variables in consideration of numerical value as well. That made running a multiple linear regression model the most approach. 
+- Given that the question being addressed is what key factors influence price, the outcome variable was straightforward. It is a continous dependent variable with all independent variables in consideration, numerical as well. That made running a multiple linear regression model the best approach. 
     - Multiple Linear Regression modeling is not too complex, and is considered an explainable model scheme that best fits this type of analysis. Though there is a consideration to be made in using machine learning models like Random Forests to help improve performance with the risk of incrementing complexity. 
     
 - The final dataset being used for modeling contained around 37K listings after data cleaning and processing. Outliers for several variables were kept into the data to maintain the size of the set, but were evaluated individually to make sure they were valid outliers. 
